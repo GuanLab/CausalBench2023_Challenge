@@ -1,1 +1,2 @@
 causalbench==1.0.1
+lightgbm==3.3.5

@@ -3,14 +3,14 @@
 # Set up paths and parameters
 DATASET_NAME="weissmann_rpe1"
 OUTPUT_DIRECTORY="/path/to/output/"
-DATA_DIRECTORY="/path/to/data/storage"
+DATA_DIRECTORY="/path/to/data/"
 TRAINING_REGIME="partial_interventional"
 PARTIAL_INTERVENTION_SEED=0
 MODEL_NAME="custom"
-INFERENCE_FUNCTION_FILE_PATH="/path/to/custom_inference_function.py"
+INFERENCE_FUNCTION_FILE_PATH="./src/main.py"
 SUBSET_DATA=1.0
 MODEL_SEED=0
-PLOT_DIRECTORY="/path/to/plots"
+PLOT_DIRECTORY="/path/to/plots/"
 
 # Loop over the different fraction values
 for FRACTION in 0.25 0.5 0.75 1.0; do
@@ -34,6 +34,6 @@ for FRACTION in 0.25 0.5 0.75 1.0; do
 done
 
 # Generate plots
-PLOTS_SCRIPT="python scripty/plots.py ${PLOT_DIRECTORY}  ${OUTPUT_DIRECTORY}"
+PLOTS_SCRIPT="python scripts/plots.py ${PLOT_DIRECTORY}  ${OUTPUT_DIRECTORY}"
 echo "Running plots script: ${PLOTS_SCRIPT}"
 eval ${PLOTS_SCRIPT}
