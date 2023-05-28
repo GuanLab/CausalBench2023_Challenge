@@ -26,7 +26,7 @@ pip install -r requirements.txt
   - _Replace the above with your desired plots directory location._
 
 
-### Run the full benchmark suite?
+### Run the full benchmark suite
 
 Before running the pipeline, you may need to modify or notice:
 - `DATASET_NAME="weissmann_rpe1"`. There're two available dataset: rpe1 and k562
